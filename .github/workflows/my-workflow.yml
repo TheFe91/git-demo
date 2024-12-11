@@ -1,0 +1,24 @@
+name: Build on GitHub
+
+run-name: ${{ github.actor }} is running "Build on GitHub"
+
+on: push
+
+jobs:
+  pipeline-develop:
+    name: Build develop
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/develop'
+    steps:
+      - name: Print a fancy message
+        run: |
+          echo "Hello, World, I am develop!"
+
+  pipeline-non-develop:
+    name: Build non-develop
+    runs-on: ubuntu-latest
+    if: github.ref != 'refs/heads/develop'
+    steps:
+      - name: Print a fancy message
+        run: |
+          echo "Hello, World, I am ${{ github.ref_name }}!"
