@@ -1,0 +1,6 @@
+Ciao, sono il file A.
+
+
+Sono il primo file creato
+
+versione: 1.2.3
