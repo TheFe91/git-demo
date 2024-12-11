@@ -1,0 +1,6 @@
+Ciao sono il file B
+
+Sono stato aggiunto con un feature branch
+
+
+bye!! ;)
